@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 const main = require("./db");
 const { urlencoded } = require("express");
+require('dotenv').config({ path: '.env' });
 
 app.use(cors());
 app.use(express.urlencoded({extended:true}))
